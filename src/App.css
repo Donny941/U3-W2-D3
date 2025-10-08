@@ -1,0 +1,40 @@
+.pointer {
+  cursor: pointer;
+}
+.btn-fw-bold {
+  font-weight: 600 !important;
+}
+.tracking-wider {
+  letter-spacing: 0.3rem;
+}
+.top-25 {
+  top: 25% !important;
+}
+.shadow-icon {
+  box-shadow: 5px 4px 12px black;
+}
+.a {
+  display: block;
+  margin-right: 1rem;
+  color: #0077ff !important;
+  text-decoration: none !important;
+}
+a {
+  display: block;
+  margin-right: 1rem;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.btn-bg {
+  background-color: #e3e3e3;
+}
+.desc-cut {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: normal;
+}
+.font-actors {
+  font-size: 12px;
+}

@@ -1,0 +1,110 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: #e50914;
+$component-active-color: #808080;
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$colors-netflix: (
+  "netflixbg": #141414,
+  "netflixgrey": #808080,
+  "netflixlightgrey": #afafaf,
+  "netflixdarkgrey": #3c3c3c,
+  "netflixred": #dd0914,
+);
+
+$theme-colors: map-merge($theme-colors, $colors-netflix);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1224px,
+  xl: 1280px,
+  xxl: 1840px,
+);
+
+$spacers-additional: (
+  6: $spacer * 6,
+  7: $spacer * 10,
+  22: $spacer * 22,
+  8: $spacer * 30,
+  9: $spacer * 35,
+);
+
+$spacers: map-merge($spacers, $spacers-additional);
+
+$h7-font-size: $font-size-base * 1;
+$h8-font-size: $font-size-base * 0.85;
+$h9-font-size: $font-size-base * 0.65;
+
+$font-sizes-additional: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+);
+
+$font-sizes: map-merge($font-sizes, $font-sizes-additional);
+
+$nav-link-font-weight: 600;
+
+$btn-border-radius: 0.8px;
+$btn-border-radius-sm: 0.8px;
+
+$form-check-input-bg: #141414;
+
+$form-check-input-width: 1.8rem;
+$form-check-input-border-radius: 0.3px;
+$form-check-input-checked-bg-color: #141414;
+$form-check-input-checked-border-color: #3c3c3c;
+$form-check-input-checked-color: #808080;
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 6. Include any other optional stylesheet partials as desired; list below is not inclusive of all available stylesheets
+
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+
+@import "bootstrap/scss/helpers";
+// ...
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
